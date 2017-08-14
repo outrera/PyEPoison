@@ -5,6 +5,7 @@ import subprocess
 import time
 import gj_e3d_api
 import archivo_de_configuracion
+#añadir el redist para directplay
 
 def Create_game(level,var,args):
     major=sys.getwindowsversion().major

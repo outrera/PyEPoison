@@ -87,11 +87,12 @@ def Exportar_datos_partida(indice):
 	VJuego = string[indice]['versionJuego']
 
 	var_to_file(NPartida, "Nombre.temp")
-	var_to_file(P_ip, "Ip.temp")
 	var_to_file(M_Juego, "Modo.temp")
 	var_to_file(Mapa, "Mapa.temp")
 	var_to_file(VJuego, "Version.temp")
-
+	MP = file_to_var(Mapa+"_overlay.jpg")
+	var_to_file(MP, "menu_overlay_30.jpg")
+	return P_ip
 
 def Unirse_servidor():
 	User = file_to_var("User.ini")
@@ -104,13 +105,12 @@ def Unirse_servidor():
 	Create_game("nada","nada",args)
 
 
-def Unirse_cliente():
+def Unirse_cliente(ip):
 	User = file_to_var("User.ini")
 	PERS = file_to_var("Pers.ini")
 	Map = file_to_var("Mapa.temp")
 	EQUIPO = file_to_var("Team.ini")
 	Mod = file_to_var("Modo.temp")
-	ip = file_to_var("Ip.temp")
 	args = exe+".exe -name "+User+" -map "+Map+" -client "+ip+"-personaje "+PERS+" -equipo "+EQUIPO+" -modojuego "+Mod+" -PrevMode"]
 	Create_game("nada","nada",args)
 

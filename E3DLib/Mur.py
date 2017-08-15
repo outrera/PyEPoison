@@ -90,9 +90,16 @@ def Exportar_datos_partida(indice):
 	var_to_file(M_Juego, "Modo.temp")
 	var_to_file(Mapa, "Mapa.temp")
 	var_to_file(VJuego, "Version.temp")
-	MP = file_to_var(Mapa+"_overlay.jpg")
-	var_to_file(MP, "menu_overlay_30.jpg")
+	try:
+		with open("/bmp/HUD/overlays/"Mapa+"_overlay.jpg", "r") as MP
+			var_to_file(MP, "/bmp/HUD/overlays/menu_overlay_30.jpg")
+			MP.close()
+	except IOError:
+		MP=open("/bmp/HUD/overlays/overlay_base.bmp", "r")
+		var_to_file(MP, "/bmp/HUD/overlays/menu_overlay_30.bmp")
+		Send_to_debug("Imagen no encontrada, puede que no tengas el mapa o que no se haya proveido una preview del mismo")
 	return P_ip
+
 
 def Unirse_servidor():
 	User = file_to_var("User.ini")

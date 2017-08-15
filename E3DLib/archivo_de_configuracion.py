@@ -52,4 +52,6 @@ def get_date_es():
 def Send_to_debug(text):
 	message=get_date_es()
 	text="\n\n"+message+"\n"+text
-	var_to_file(text, "debug.txt")
+	File=open("debug.txt", "a")
+	File.write(str(text))
+	File.close()

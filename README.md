@@ -54,8 +54,8 @@ Descripción: | Le indica a GameJolt que el juego está abierto, pero pausado o 
 GUARDAR_PUNT_SERV |  ɣ
 ------------ | -------------
 Syntaxis: GUARDAR_PUNT_SERV()
-Descripción: Guarda la puntuación del jugador actual
-Depende de archivos: Sí, Table.ini (el indice de la tabla), Extra_data.ini (informacion extra que quieras almacenar, no es visible en el sitio), score.ini (descripción de la puntuación), sort.ini (el valor de la puntuación, númerico o texto)
+Descripción: | Guarda la puntuación del jugador actual
+Depende de archivos: | Sí, Table.ini (el indice de la tabla), Extra_data.ini (informacion extra que quieras almacenar, no es visible en el sitio), score.ini (descripción de la puntuación), sort.ini (el valor de la puntuación, númerico o texto)
 
 GUARDAR_PUNT_CL |  ɣ
 ------------ | -------------

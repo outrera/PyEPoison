@@ -1,8 +1,8 @@
 # PyEPoison
 Implementación de módulos de python para potenciar las capacidades del motor de Entidad 3D a base de scripts
 
-##Documentación
-###*Para las funciones importadas desde E3d_format.py*
+## Documentación
+### *Para las funciones importadas desde E3d_format.py*
 -----
 
 
@@ -21,7 +21,7 @@ Descripción: | Toma una variable y la convierte en un archivo
 Nota: | A diferencia de ARCH_A_VAR, esta función si puede escribir un archivo entero de varias líneas
 -----
 ### Funciones para GameJolt
-## Nota: La mayoría de las funciones dependen de un parámetro en archivo_de_configuracion.py (usrdata)
+#### Nota: La mayoría de las funciones dependen de un parámetro en archivo_de_configuracion.py (usrdata)
 LOGIN |  ɣ
 ------------ | -------------
 Syntaxis: | LOGIN()

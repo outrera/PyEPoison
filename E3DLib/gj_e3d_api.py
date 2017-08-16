@@ -60,7 +60,7 @@ def get_data():
 	usrdata = usr_data()
 	key = Get_key()
 	reut = usrdata.fetchData(key, user_info_only=False)
-	return reut
+	return str(reut)
 	#Obtiene informacion alojada en una key
 def store_Data(User=False): #User debe ser True o False
 	key = Get_key()

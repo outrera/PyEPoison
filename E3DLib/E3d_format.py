@@ -21,8 +21,3 @@ from .gj_e3d_api import get_tables as CONS_TABLAS
 import .Mur
 from .FlagSoundLib import flag_sound as SOND_FLAG
 from .WindowsExecutableManagement import Create_game as CREAR_JUEGO
-def INICIAR_PARTIDA(nivel,variable):
-    INICIAR_SESION()
-    CREAR_JUEGO(nivel,variable)
-def CAMBIAR_NIVEL(nivel,variable):
-    CREAR_JUEGO(nivel,variable)

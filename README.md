@@ -53,7 +53,7 @@ Descripción: | Le indica a GameJolt que el juego está abierto, pero pausado o 
 
 GUARDAR_PUNT_SERV |  ɣ
 ------------ | -------------
-Syntaxis: GUARDAR_PUNT_SERV()
+Syntaxis: | GUARDAR_PUNT_SERV()
 Descripción: | Guarda la puntuación del jugador actual
 Depende de archivos: | Sí, Table.ini (el indice de la tabla), Extra_data.ini (informacion extra que quieras almacenar, no es visible en el sitio), score.ini (descripción de la puntuación), sort.ini (el valor de la puntuación, númerico o texto)
 
@@ -94,3 +94,26 @@ Syntaxis: | CONS_TABLAS(opción, número de tabla)
 Descripción: | Consulta todas las tablas existentes. En el parámetro opción se indica qué dato deseas consultar (1-id, 2-descripcion, 3-nombre, 4-primario(¿La tabla es la principal? Regresa True o False), 5-numero de tablas existentes
 Depende de archivos: | No.
 Nota: | El numero de tabla comienza en 0
+
+-----
+### Funciones para Entidad3D
+
+CREAR_JUEGO |  ɣ
+------------ | -------------
+Syntaxis: | CREAR_JUEGO(nivel, variable, argumentos)
+Descripción: | Lanza entidad3d, utilizando el sistema de manejo de ejecutables, que se encargará del modo de compatibilidad, el inicio de sesión y el mantenimiento de la misma.
+Nivel: | Nivel que deseas lanzar
+Variable: | Variable que se desee establecer desde un principio, disponible como Var1 en Entidad3D
+Argumentos: | Texto exacto para iniciar Entidad3D, como el que pondrías para iniciar desde un acceso directo. Usar "Nada" para usar Nivel y Variable, de otro modo estos no tienen efecto.
+Depende de archivos: | No.
+Nota: | El modo por defecto es -PrevMode
+
+SOND_FLAG |  ɣ
+------------ | -------------
+Syntaxis: | SOND_FLAG(Dummypath,file,chan,fadetime)
+Descripción: | El comando verificará constantemente la existencia de un archivo, mientras ese archivo exista se reproducirá el sonido especificado.
+Dummypath: | Nombre del archivo que el comando comprobará su existencia (Con terminación)
+file: | Nombre del archivo que se reproducirá (Con terminación)
+chan: | Número de canal que se desea usar
+fadetime: | Tiempo (en segundos) que se tardará en desvanecerse el sonido
+Depende de archivos: | Sí, para Dummypath y file.

@@ -1,0 +1,2 @@
+from E3dLib.E3dFormat import GUARDAR_PARTIDA
+GUARDAR_PARTIDA()

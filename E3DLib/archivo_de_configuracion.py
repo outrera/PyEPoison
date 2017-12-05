@@ -3,7 +3,7 @@ from py_gjapi import *
 
 
 def get_exe():
-    exe = "Nombre de tu ejecutable sin el .exe"
+    exe = "Entidad3D"
     return exe
 
 
